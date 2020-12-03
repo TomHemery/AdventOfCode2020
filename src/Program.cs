@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            PasswordValidator.ValidatePartTwo("input/pwds.txt");
+            TreeMapper.MapTrees("input/treeMap.txt");
         }
     }
 }
