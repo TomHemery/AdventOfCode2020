@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            TreeMapper.MapTrees("input/treeMap.txt");
+            BoardingPassChecker.CheckBoardingPasses("input/boardingPasses.txt");
         }
     }
 }
