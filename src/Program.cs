@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            CustomsDeclarationsChecker.CheckCustomsDeclarations("input/customsDeclarations.txt");
+            LuggageChecker.CheckLuggage("input/luggageRules.txt");
         }
     }
 }
