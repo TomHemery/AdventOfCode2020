@@ -1,4 +1,4 @@
-using System.Xml;
+using System.Diagnostics;
 using System;
 using System.Linq;
 using System.IO;
@@ -30,11 +30,15 @@ namespace AdventOfCode2020
 
         public static void CountArrangements(string adapterFile)
         {
+            var timer = new Stopwatch();
+
+            timer.Start();
             int [] vals = GetOrderedValues(adapterFile);
+            long count = CountLeaves(-1, vals, new Dictionary<int, long>());
+            timer.Stop();
 
-            foreach(int val in vals) Console.WriteLine(val);
-
-            Console.WriteLine("Leaf node count: " + CountLeaves(-1, vals, new Dictionary<int, long>()));
+            Console.WriteLine("Leaf node count: " + count);
+            Console.WriteLine("Elapsed: " + timer.ElapsedMilliseconds);
         }
 
         private static long CountLeaves(int curr, int [] vals, Dictionary<int, long> validPaths)
@@ -44,8 +48,6 @@ namespace AdventOfCode2020
             }
             else if(validPaths.ContainsKey(curr)) return validPaths[curr];
 
-
-            Console.WriteLine("Doing it manually");
             long total = 0;
             for(int i = curr + 1; i < vals.Length; i++){
                 int diff = curr >= 0 ? vals[i] - vals[curr] : vals[i];
