@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            LuggageChecker.CheckLuggage("input/luggageRules.txt");
+            JoltAdapterChecker.CountArrangements("input/joltAdapters.txt");
         }
     }
 }
