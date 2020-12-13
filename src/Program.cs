@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            JoltAdapterChecker.CountArrangements("input/joltAdapters.txt");
+            BoatNavigator.CalcManhattanDist("input/navigationInstructions.txt");
         }
     }
 }
