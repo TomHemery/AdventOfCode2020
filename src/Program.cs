@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            BoatNavigator.CalcManhattanDist("input/navigationInstructions.txt");
+            TimetableChecker.FindSequentialTimestamp("input/busTimetable.txt");
         }
     }
 }
