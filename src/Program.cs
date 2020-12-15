@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            TimetableChecker.FindSequentialTimestamp("input/busTimetable.txt");
+            MemoryInitializer.RunProgramV2("input/initializationProgram.txt");
         }
     }
 }
