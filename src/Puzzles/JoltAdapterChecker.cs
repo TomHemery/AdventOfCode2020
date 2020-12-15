@@ -16,7 +16,7 @@ namespace AdventOfCode2020
 
             for(int i = 0; i <= vals.Length; i++)
             {
-                int diff = i == 0 ? vals[i] : 
+                int diff = i == 0 ? vals[i] : +
                     i == vals.Length ? 3 : vals[i] - vals[i-1];
 
                 if(i < vals.Length) Console.WriteLine(vals[i]);
