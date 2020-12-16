@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            MemoryInitializer.RunProgramV2("input/initializationProgram.txt");
+            TicketScanner.ScanTickets("input/tickets.txt");
         }
     }
 }
