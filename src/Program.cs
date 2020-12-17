@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            TicketScanner.ScanTickets("input/tickets.txt");
+            EnergyGrid.Simulate("input/energyGrid.txt");
         }
     }
 }
