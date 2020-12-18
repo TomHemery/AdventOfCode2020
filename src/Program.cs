@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            EnergyGrid.Simulate("input/energyGrid.txt");
+            ExpressionEvaluator.Evaluate("input/mathHomework.txt");
         }
     }
 }
